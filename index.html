@@ -1,111 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Art Journey</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Nunito:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Monika Zając - Art & Co-founder</title>
+  <!-- Montserrat supports Polish characters well -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gradient-to-b from-gray-100 via-indigo-100 to-gray-200 font-serif overflow-x-hidden relative">
-
-  <!-- Main Heading and Subheading -->
-  <div class="w-full flex flex-col items-center pt-12 pb-4">
-    <h1 class="heading-archive text-center" style="font-size: 5.5rem;">Collected<br>Moments</h1>
-  </div>
-  <!-- Move Photography button to top right -->
-  <div class="absolute top-8 right-8 z-50">
-    <span class="subheading-photo mt-2">Photography</span>
-  </div>
-
-  <!-- Floating Windows Scene -->
-  <section id="floating-windows" class="relative min-h-screen flex justify-center items-center overflow-hidden">
-    <div class="relative w-full h-full">
-      <!-- <button class="polaroid-btn" style="top: 40px; left: 8vw;">
-        <div class="polaroid-photo-area">
-          <img src="assets/images/house.jfif" alt="House" class="polaroid-photo-img">
-        </div>
-        <div class="polaroid-caption">House</div>
-      </button> -->
-    </div>
-  </section>
-
-  <!-- Stylized Fake Windows Layout -->
-  <div class="absolute top-32 left-0 w-full h-[600px] min-h-[400px]">
-    <!-- Only one polaroid button should remain, centered under the Twitter button -->
-    <a href="https://www.eyeem.com/u/monikazajac" target="_blank" rel="noopener noreferrer" class="polaroid-btn" style="top: 60%; left: 40%; transform: translate(-50%, 0); text-decoration: none; cursor: pointer;">
-      <div class="polaroid-photo-area">
-        <img src="assets/images/house.jfif" alt="House" class="polaroid-photo-img">
+<body class="pink-bg">
+  <main class="main-rows">
+    <!-- Row 1: Photo | Name/Title -->
+    <section class="row">
+      <div class="row-img left-img">
+        <img src="assets/images/me.jpg" alt="Monika Zając portrait" class="row-photo" />
       </div>
-      <div class="polaroid-caption">Photography</div>
-    </a>
-    <a href="gallery-3col.html" class="window-link" style="text-decoration: none; display: inline-block; cursor: pointer; width: 440px; height: 440px;">
-      <button class="window-btn window-fake-demo window-painting" style="width: 440px; height: 440px; padding: 0; cursor: pointer;">
-        <div class="window-titlebar flex items-center justify-between px-3 py-1">
-          <span class="window-title">Paintings</span>
-          <span class="window-close">&#10005;</span>
-        </div>
-        <div class="window-image-area flex items-center justify-center" style="padding: 8px 8px 0 8px;">
-          <img src="assets/images/painting.jfif" alt="Painting" class="window-portrait-img">
-        </div>
-        <div class="window-bottom-bar"></div>
-      </button>
-    </a>
-    <button class="window-btn window-fake-demo window-portrait" style="width: 440px; height: 440px; padding: 0; transform: translateY(200px);">
-      <div class="window-titlebar flex items-center justify-between px-3 py-1">
-        <span class="window-title">About me</span>
-        <span class="window-close">&#10005;</span>
+      <div class="row-text right-text">
+        <h1 class="main-title">Monika Zając</h1>
+        <h2 class="subtitle">ETHWarsaw co-founder, artist, witch</h2>
       </div>
-      <div class="window-image-area flex items-center justify-center" style="padding: 8px 8px 0 8px;">
-        <img src="assets/images/me.jpg" alt="Portrait" class="window-portrait-img">
+    </section>
+    <!-- Row 2: My paintings | Painting image -->
+    <section class="row">
+      <div class="row-text left-text">
+        <h2 class="section-title">My paintings</h2>
       </div>
-      <div class="window-bottom-bar"></div>
-    </button>
-    <a href="https://www.amazon.com/Birds-Flowers-Inspired-Coloring-Adults/dp/B0C2SM6815/ref=sr_1_1?crid=3RXVQKQVEIFH4&dib=eyJ2IjoiMSJ9.j0_MNA1yMj6V3Bvq6ShNsqAuGDuURusHFvA8KiN11eY.dpEjMT-ow030x-eO_jWv9WfA600xtK7l4U0APBw723s&dib_tag=se&keywords=flowers+and+bird+coloring+book+monika+zajac&qid=1746287390&sprefix=flowers+and+bird+coloring+book+monika+zajac%2Caps%2C223&sr=8-1" target="_blank" rel="noopener noreferrer" style="position: absolute; left: 72%; top: 92%; z-index: 20; display: block;">
-      <img src="assets/images/coloring.png" alt="Coloring Book" style="width: 220px; height: auto; box-shadow: 0 4px 16px rgba(120,120,180,0.13); border-radius: 0.5em; cursor: pointer;">
-    </a>
-    <a href="https://www.redbubble.com/people/WaysOfCreation/shop?asc=u" target="_blank" rel="noopener noreferrer" style="position: absolute; left: 88%; top: 92%; z-index: 20; display: block;">
-      <img src="assets/images/red.png" alt="Redbubble Shop" style="width: 120px; height: auto; box-shadow: 0 4px 16px rgba(120,120,180,0.13); border-radius: 0.5em; cursor: pointer;">
-    </a>
-    <a href="gallery-5col.html" class="window-link" style="text-decoration: none; display: inline-block; cursor: pointer; width: 340px; height: 340px;">
-      <button class="window-btn window-fake-demo window-teagif" style="width: 340px; height: 340px; padding: 0; cursor: pointer; transform: translate(70px, -100px);">
-        <div class="window-titlebar flex items-center justify-between px-3 py-1">
-          <span class="window-title">Gallery</span>
-          <span class="window-close">&#10005;</span>
-        </div>
-        <div class="window-image-area flex items-center justify-center" style="padding: 8px 8px 0 8px;">
-          <img src="assets/images/teagif.gif" alt="Teagif" class="window-portrait-img">
-        </div>
-        <div class="window-bottom-bar"></div>
-      </button>
-    </a>
-  </div>
-  <!-- Move Twitter button to the middle of the website -->
-  <div class="absolute left-1/2 top-[25%] -translate-x-1/2 -translate-y-1/2 z-50">
-    <a href="https://x.com/monikabzajac" target="_blank" class="retro-follow-btn">Follow me on Twitter</a>
-  </div>
-  <!-- Sticker-style Zora button, bottom left
-  <a href="https://zora.co/@pathwaysofcreation" target="_blank" class="sticker-btn zora-btn" style="position: absolute; bottom: 48px; left: 48px; z-index: 50; text-decoration: none;">
-    <span class="sticker-star">★</span> Zora
-  </a>
-  Star-shaped sticker button for Rodeo, bottom right
-<button class="star-sticker-btn" style="position: absolute; bottom: 48px; right: 48px; z-index: 50;">
-    <svg width="90" height="90" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <polygon points="50,8 61,38 94,38 67,58 77,90 50,70 23,90 33,58 6,38 39,38" fill="#ffe066" stroke="#e6b800" stroke-width="3"/>
-    </svg>
-    <span class="star-sticker-text">Rodeo</span>
-</button> -->
-  <!-- First star with Zora text -->
-  <a href="https://zora.co/@pathwaysofcreation" target="_blank" class="star-container" style="text-decoration: none;">
-    <img src="assets/images/star3.svg" alt="" class="decorative-star" style="width: 600px; height: 600px;">
-    <span class="star-text">Zora</span>
-  </a>
-  <!-- Second star with Rodeo text -->
-  <a href="https://rodeo.club/@pathwaysofcreation" target="_blank" class="star-container second-star" style="text-decoration: none;">
-    <img src="assets/images/star3.svg" alt="" class="decorative-star" style="width: 600px; height: 600px;">
-    <span class="star-text">Rodeo</span>
-  </a>
-
+      <div class="row-img right-img">
+        <img src="assets/images/painting.jfif" alt="Painting" class="row-photo" />
+      </div>
+    </section>
+    <!-- Row 3: House image | Photography -->
+    <section class="row">
+      <div class="row-img left-img">
+        <img src="assets/images/house.jfif" alt="House" class="row-photo" />
+      </div>
+      <div class="row-text right-text">
+        <h2 class="section-title">Photography</h2>
+      </div>
+    </section>
+    <!-- Row 4: AI art | Gallery image -->
+    <section class="row">
+      <div class="row-text left-text">
+        <h2 class="section-title">AI art</h2>
+      </div>
+      <div class="row-img right-img">
+        <img src="assets/images/teagif.gif" alt="AI Art" class="row-photo" />
+      </div>
+    </section>
+  </main>
 </body>
 </html>

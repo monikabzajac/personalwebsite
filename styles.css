@@ -525,3 +525,256 @@ body::after {
     padding: 0.6em 1.8em;
   }
 }
+
+/* Pink background and grid layout */
+.pink-bg {
+  background: linear-gradient(135deg, #ffd1e3 0%, #ffe3f1 100%);
+  min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(320px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px 0 rgba(255, 105, 180, 0.10);
+  overflow: hidden;
+}
+
+.grid-img, .grid-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px 0 rgba(255, 105, 180, 0.18);
+  object-fit: cover;
+}
+
+.art-img {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px 0 rgba(255, 105, 180, 0.13);
+  object-fit: cover;
+}
+
+.main-title {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2.8rem;
+  color: #e75480;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #b03a5b;
+  font-weight: 500;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2.2rem;
+  color: #e75480;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .main-grid {
+    padding: 2rem 0.5rem;
+    gap: 1.5rem;
+  }
+  .grid-row {
+    grid-template-columns: 1fr;
+    min-height: 320px;
+  }
+  .grid-img, .grid-text {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-grid {
+    padding: 0.5rem 0.2rem;
+    gap: 1rem;
+  }
+  .profile-img, .art-img {
+    max-width: 95vw;
+    border-radius: 1rem;
+  }
+  .main-title {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 1.3rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Remove old backgrounds */
+body::before, body::after {
+  display: none !important;
+}
+
+body, .main-title, .subtitle, .section-title {
+  font-family: 'Montserrat', 'Nunito', Arial, sans-serif !important;
+}
+
+.main-rows {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  width: 100vw;
+  min-height: 340px;
+  height: 50vh;
+  max-height: 600px;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+.row-img {
+  flex: 1 1 50%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.row-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.row-text {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.85);
+  padding: 2.5rem 2rem;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+.left-img {
+  order: 1;
+  border-top-right-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+}
+.right-text {
+  order: 2;
+}
+.left-text {
+  order: 1;
+}
+.right-img {
+  order: 2;
+  border-top-left-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+}
+
+.main-title {
+  font-size: 2.8rem;
+  color: #e75480;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.subtitle {
+  font-size: 1.5rem;
+  color: #b03a5b;
+  font-weight: 500;
+  text-align: center;
+}
+.section-title {
+  font-size: 2.2rem;
+  color: #e75480;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column;
+    height: auto;
+    min-height: 220px;
+    max-height: none;
+  }
+  .row-img, .row-text {
+    flex: 1 1 100%;
+    min-height: 180px;
+    max-height: 320px;
+    border-radius: 0 !important;
+    padding: 1.2rem 0.5rem;
+  }
+  .row-photo {
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 1.3rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .row-text {
+    padding: 1.2rem 0.5rem;
+  }
+}
+
+/* Remove old grid and background styles */
+.main-grid, .grid-row, .grid-img, .grid-text, .profile-img, .art-img {
+  all: unset;
+}
+body::before, body::after {
+  display: none !important;
+}
+
+/* Remove all border-radius for sharp corners */
+.left-img, .right-img, .row-img, .row-text {
+  border-radius: 0 !important;
+}
