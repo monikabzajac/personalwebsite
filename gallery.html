@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Monika Zając</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { background: #fff8fa !important; }
+    .gallery-header {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.8rem;
+      color: #e75480;
+      font-weight: 700;
+      text-align: center;
+      margin: 2rem 0 1.5rem 0;
+    }
+    .main-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8em 2em;
+      background: #e75480;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 0 !important;
+      text-decoration: none;
+      box-shadow: 0 2px 12px 0 rgba(231,84,128,0.13);
+      transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+      cursor: pointer;
+      text-align: center;
+    }
+    .main-btn:hover {
+      background: #b03a5b;
+      color: #fff;
+      box-shadow: 0 4px 18px 0 rgba(231,84,128,0.18);
+    }
+    .gallery-row {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .gallery-row img {
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      background: #fff;
+      box-shadow: 0 4px 32px 0 rgba(255, 105, 180, 0.10);
+      border-radius: 0;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 1.2rem;
+      max-width: 1200px;
+      margin: 0 auto 3rem auto;
+    }
+    .gallery-grid img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      background: #fff;
+      box-shadow: 0 2px 12px 0 rgba(255, 105, 180, 0.10);
+      border-radius: 0;
+      min-width: 0;
+    }
+    @media (max-width: 1200px) {
+      .gallery-row img { width: 180px; height: 180px; }
+      .gallery-grid { grid-gap: 0.5rem; }
+    }
+    @media (max-width: 900px) {
+      .gallery-row { gap: 0.5rem; }
+      .gallery-row img { width: 120px; height: 120px; }
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .gallery-header { font-size: 1.5rem; }
+      .gallery-row img { width: 80px; height: 80px; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="main-btn" style="margin:2rem 0 0 2rem;">Home</a>
+  <div class="gallery-header">Gallery</div>
+  <div class="gallery-row">
+    <img src="assets/images/painting.jfif" alt="Painting 1">
+    <img src="assets/images/pattern1.jpg" alt="Painting 2">
+    <img src="assets/images/pattern2.jpg" alt="Painting 3">
+  </div>
+  <div class="gallery-grid">
+    <img src="assets/images/painting.jfif" alt="Grid 1">
+    <img src="assets/images/pattern1.jpg" alt="Grid 2">
+    <img src="assets/images/pattern2.jpg" alt="Grid 3">
+    <img src="assets/images/house.jfif" alt="Grid 4">
+    <img src="assets/images/me.jpg" alt="Grid 5">
+    <img src="assets/images/teagif.gif" alt="Grid 6">
+    <img src="assets/images/painting.jfif" alt="Grid 7">
+    <img src="assets/images/pattern1.jpg" alt="Grid 8">
+    <img src="assets/images/pattern2.jpg" alt="Grid 9">
+    <img src="assets/images/house.jfif" alt="Grid 10">
+    <img src="assets/images/me.jpg" alt="Grid 11">
+    <img src="assets/images/teagif.gif" alt="Grid 12">
+    <img src="assets/images/painting.jfif" alt="Grid 13">
+    <img src="assets/images/pattern1.jpg" alt="Grid 14">
+    <img src="assets/images/pattern2.jpg" alt="Grid 15">
+    <img src="assets/images/house.jfif" alt="Grid 16">
+    <img src="assets/images/me.jpg" alt="Grid 17">
+    <img src="assets/images/teagif.gif" alt="Grid 18">
+    <img src="assets/images/painting.jfif" alt="Grid 19">
+    <img src="assets/images/pattern1.jpg" alt="Grid 20">
+    <img src="assets/images/pattern2.jpg" alt="Grid 21">
+    <img src="assets/images/house.jfif" alt="Grid 22">
+    <img src="assets/images/me.jpg" alt="Grid 23">
+    <img src="assets/images/teagif.gif" alt="Grid 24">
+    <img src="assets/images/painting.jfif" alt="Grid 25">
+  </div>
+</body>
+</html> 
